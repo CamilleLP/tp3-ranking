@@ -29,11 +29,11 @@ class TestIndicators(TestCase):
         count_doc_not_in_index =  indic.count_token_doc(token = token_in_doc0, doc_index=10)
         
         # THEN
-        self.assertEquals(count_doc_not_in_index, 0)
-        self.assertEquals(count_token_not_in_docs, 0)
-        self.assertEquals(count_token_in_doc0, 2)
-        self.assertEquals(count_token_in_doc1, 1)
-        self.assertEquals(count_token_not_in_doc0, 0)
+        self.assertEqual(count_doc_not_in_index, 0)
+        self.assertEqual(count_token_not_in_docs, 0)
+        self.assertEqual(count_token_in_doc0, 2)
+        self.assertEqual(count_token_in_doc1, 1)
+        self.assertEqual(count_token_not_in_doc0, 0)
 
     def test_len_doc(self):
         '''
@@ -52,9 +52,9 @@ class TestIndicators(TestCase):
         doc10_not_in_index = indic.len_doc(10)
         
         # THEN
-        self.assertEquals(doc0_in_index, 3)
-        self.assertEquals(doc1_in_index, 1)
-        self.assertEquals(doc10_not_in_index, 0)
+        self.assertEqual(doc0_in_index, 3)
+        self.assertEqual(doc1_in_index, 1)
+        self.assertEqual(doc10_not_in_index, 0)
 
     def test_doc_ids(self):
         '''
@@ -75,8 +75,8 @@ class TestIndicators(TestCase):
         two_docs = indic2.doc_ids()
         
         # THEN
-        self.assertEquals(len(no_docs), 0)
-        self.assertEquals(len(two_docs), 2)
+        self.assertEqual(len(no_docs), 0)
+        self.assertEqual(len(two_docs), 2)
         
     def test_avg_len(self):
         '''
@@ -97,8 +97,8 @@ class TestIndicators(TestCase):
         avg_len2 = indic2.avg_len()
        
         # THEN
-        self.assertEquals(avg_len1, 0)
-        self.assertEquals(avg_len2, float(1.5))
+        self.assertEqual(avg_len1, 0)
+        self.assertEqual(avg_len2, float(1.5))
 
     def test_nb_docs_with_token(self):
         '''
@@ -122,9 +122,9 @@ class TestIndicators(TestCase):
         nb_docs_with_token3 = indic.nb_docs_with_token(token3)
        
         # THEN
-        self.assertEquals(nb_docs_with_token1, 1)
-        self.assertEquals(nb_docs_with_token2, 2)
-        self.assertEquals(nb_docs_with_token3, 0)
+        self.assertEqual(nb_docs_with_token1, 1)
+        self.assertEqual(nb_docs_with_token2, 2)
+        self.assertEqual(nb_docs_with_token3, 0)
 
     def test_idf(self):
         '''
