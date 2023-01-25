@@ -44,7 +44,7 @@ python3 main.py -h
 
 The user has typed "accueil cinéma", has chose a filter of type **and** and enter file names for *index* and *document*
 ```shell
-python3 main.py "recette pâte à crêpes" and --index index.json --documents documents.json
+python3 main.py "accueil cinéma" and --index index.json --documents documents.json
 ```
 
 ## Launch tests
