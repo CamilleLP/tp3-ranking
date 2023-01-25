@@ -128,7 +128,7 @@ class TestIndicators(TestCase):
 
     def test_idf(self):
         '''
-        check that idf returns coherent results:
+        check that idf returns consistent results:
         less frequent token has greater idf
         '''
         # GIVEN
@@ -150,13 +150,11 @@ class TestIndicators(TestCase):
         idf_frequent = indic.idf(frequent_token)
        
         # THEN
-        self.assertGreater(idf_frequent, 1)
-        self.assertGreater(idf_rare, 1)
         self.assertTrue(idf_rare > idf_frequent)
 
     def test_bm25_token(self):
         '''
-        check that b25_token returns coherent results:
+        check that b25_token returns consistent results:
         if one token is present in a document then bm25
         is greater than if the token was not present
         '''

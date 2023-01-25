@@ -1,6 +1,10 @@
 import math
 
 class Indicators:
+    """
+    This class contains many function used to compute the bm25 score
+    between a request and a document
+    """
 
     def __init__(self, index):
         self.index = index
@@ -54,7 +58,7 @@ class Indicators:
 
     def nb_docs_with_token(self, token):
         '''
-        count the number of documents containing one token
+        count the number of documents containing one given token
         '''
         count = 0
         if token in list(self.index.keys()):
@@ -69,12 +73,12 @@ class Indicators:
         n = self.nb_docs_with_token(token)
         # classic formula: math.log(N / n)
         # use of modified formula to avoid division by 0
-        idf = (N - n + 0.5) / (n + 0.5) + 1
+        idf = math.log((N - n + 0.5) / (n + 0.5) + 1)
         return idf
 
     def bm25_token(self, token, id_doc, k = 1.2, b = 0.75):
         '''
-        compute bm25 for one token
+        compute bm25 score for one token
         '''
         f = self.count_token_doc(token, id_doc)
         len_doc = self.len_doc(id_doc)

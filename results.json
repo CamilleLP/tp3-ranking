@@ -1,117 +1,21 @@
 {
     "results": {
         "0": {
-            "title": "Recette Pâte à crêpes au sarrasin - La cuisine familiale : Un plat, Une recette",
-            "url": "https://lacuisinedannie.20minutes.fr/recette-pate-a-crepes-au-sarrasin-1118.html"
+            "title": "Weather in France",
+            "url": "https://weather-in-france.com"
         },
         "1": {
-            "title": "Pate à choux sucrée : Recette de Pate à choux sucrée - Doctissimo",
-            "url": "https://recettes.doctissimo.fr/pate-a-choux-sucree.htm"
+            "title": "France",
+            "url": "https://visit-france.com"
         },
         "2": {
-            "title": "Filets de dorade à la fondue de poireaux : Recette de Filets de dorade à la fondue de poireaux - Doctissimo",
-            "url": "https://recettes.doctissimo.fr/filets-de-dorade-a-la-fondue-de-poireaux.htm"
-        },
-        "3": {
-            "title": "Recette Carottes et navets glacés - La cuisine familiale : Un plat, Une recette",
-            "url": "https://lacuisinedannie.20minutes.fr/recette-carottes-et-navets-glaces-994.html"
-        },
-        "4": {
-            "title": "Recette Pâtes fraîches maison aux oeufs  - La cuisine familiale : Un plat, Une recette",
-            "url": "https://lacuisinedannie.20minutes.fr/recette-pates-fraiches-maison-aux-oeufs--1298.html"
-        },
-        "5": {
-            "title": "Faisan chasseur : Recette de Faisan chasseur - Doctissimo",
-            "url": "https://recettes.doctissimo.fr/faisan-chasseur.htm"
-        },
-        "6": {
-            "title": "Coq au vin maison : recette de Coq au vin maison",
-            "url": "https://marmiton.org/recettes/recette_coq-au-vin-maison_25755.aspx"
-        },
-        "7": {
-            "title": "Où se lève et où se couche le soleil: à l'Est ou à l'Ouest ?",
-            "url": "https://jeretiens.net/ou-se-leve-et-ou-se-couche-le-soleil/"
-        },
-        "8": {
-            "title": "Laines Paysannes - Une mode à rebrousse-poil",
-            "url": "https://laines-paysannes.fr/"
-        },
-        "9": {
-            "title": "Pâtisserie JFF à Cherbourg en Normandie et Neuilly-sur-Seine",
-            "url": "https://www.patisserie-foucher.com/"
-        },
-        "10": {
-            "title": "HISTORIQUE INFLATION EN FRANCE de 1900 à 2023",
-            "url": "https://france-inflation.com/inflation-depuis-1901.php"
-        },
-        "11": {
-            "title": "Recette du véritable pain d'épices de Reims (sans lait, sans oeufs, sans beurre) - Jujube en cuisine",
-            "url": "https://www.jujube-en-cuisine.fr/veritable-pain-epices"
-        },
-        "12": {
-            "title": "Poney club à Montauban près de Toulouse : Domaine d'Opale",
-            "url": "https://www.domainedopale.fr/"
-        },
-        "13": {
-            "title": "BYmyCAR Fontaine, concessionnaire Opel Fontaine, voiture Neuve/Occasion Opel à Fontaine",
-            "url": "https://www.bymycar.fr/concessions/opel-fontaine-grenoble-bymycar-41"
-        },
-        "14": {
-            "title": "Le Garage à Légumes – Produits locaux en circuits courts",
-            "url": "https://legaragealegumes.fr/"
-        },
-        "15": {
-            "title": "Nougatier à Montélimar depuis 1848 | Nougat Chabert & Guillot",
-            "url": "https://www.nougat-chabert-guillot.com/"
-        },
-        "16": {
-            "title": "Bénéficiez de la prime à la conversion des chaudières | Gouvernement.fr",
-            "url": "https://www.gouvernement.fr/beneficiez-de-la-prime-a-la-conversion-des-chaudieres"
-        },
-        "17": {
-            "title": "Installation pompe à chaleur et climatisation réversible Bordeaux - Europ Environnement",
-            "url": "https://www.europenvironnement.fr/"
-        },
-        "18": {
-            "title": "Banque en ligne - votre compte à distance | Banque Populaire",
-            "url": "https://www.nord.banquepopulaire.fr/portailinternet/Editorial/Informations/Pages/banque-a-distance-sur-internet.aspx"
-        },
-        "19": {
-            "title": "Star Wars Universe • L'univers de Star Wars est désormais à votre portée",
-            "url": "https://www.starwars-universe.com/"
-        },
-        "20": {
-            "title": "Découvrez la référence haut de gamme du sport à la maison | Nordictrack",
-            "url": "https://www.nordictrack.fr/"
-        },
-        "21": {
-            "title": "La lourde facture pour les malades du coronavirus à l'hôpital | Les Echos",
-            "url": "https://www.lesechos.fr/economie-france/social/la-lourde-facture-pour-les-malades-du-coronavirus-a-lhopital-1228650"
-        },
-        "22": {
-            "title": "Impôt sur le revenu - Qu'est-ce qu'un enfant à charge ? | Service-public.fr",
-            "url": "https://www.service-public.fr/particuliers/vosdroits/F23468"
-        },
-        "23": {
-            "title": "Ciné Le Foyer – Cinéma de Bourg-Argental, Tournée du Foyer, Ciné d'été à Lalouvesc",
-            "url": "http://www.cinelefoyer.com/"
-        },
-        "24": {
-            "title": "Ciné Le Foyer – Cinéma de Bourg-Argental, Tournée du Foyer, Ciné d'été à Lalouvesc",
-            "url": "https://cinelefoyer.com/"
-        },
-        "25": {
-            "title": "Ce soir TV - Programme TV de ce soir à la télé - TV Magazine",
-            "url": "https://tvmag.lefigaro.fr/programme-tv/ce_soir_la_tv.html"
-        },
-        "26": {
-            "title": "Départementales et régionales 2021 : le fil actu des élections. - Mise à jour permanente - La Gazette Ariégeoise",
-            "url": "https://gazette-ariegeoise.fr/departementales-et-regionales-2021-toute-lactu-des-elections-en-ariege"
+            "title": "France Info",
+            "url": "https://france-info.fr"
         }
     },
     "infos": {
-        "number of documents in index": 384,
-        "number of survivor documents after filtering": 27,
-        "execution time": "15.285 seconds"
+        "number of documents in index": 4,
+        "number of survivor documents after filtering": 3,
+        "execution time": "0.001 seconds"
     }
 }
