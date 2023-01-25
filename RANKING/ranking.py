@@ -1,6 +1,7 @@
 import nltk
 from RANKING import indicators
 import time
+import json
 
 class Ranking:
 
@@ -80,14 +81,14 @@ class Ranking:
 
         # extract info about document with documents file
         res_request = {}
-        res_request['result'] = {}
+        res_request['results'] = {}
         id = 0
         for id_doc in list_rank_docs:
             for elem in self.documents:
                 if int(id_doc) == elem['id']:
-                    res_request['result'][id] = {}
-                    res_request['result'][id]['title'] = elem['title']
-                    res_request['result'][id]['url'] = elem['url']
+                    res_request['results'][id] = {}
+                    res_request['results'][id]['title'] = elem['title']
+                    res_request['results'][id]['url'] = elem['url']
                     id += 1
 
         res_request['infos'] = {}
@@ -95,5 +96,8 @@ class Ranking:
         res_request['infos']['number of survivor documents after filtering'] = len(filter)
         end = time.time()
         res_request['infos']['execution time'] = str(round(end - start, 3)) + ' seconds'
-        return res_request
+        res_json = json.dumps(res_request, indent = 4, ensure_ascii=False)
+        with open("results.json", "w") as outfile:
+            outfile.write(res_json)
+        return res_json
 

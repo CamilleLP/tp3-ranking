@@ -42,12 +42,14 @@ class Indicators:
         '''
         return the average number of tokens per document
         '''
+        avg_len = 0
         doc_ids = self.doc_ids()
         nb_docs = len(doc_ids)
         len_docs = 0
         for doc in doc_ids:
             len_docs += self.len_doc(doc)
-        avg_len = round(len_docs / nb_docs, 3)
+        if nb_docs:
+            avg_len = round(len_docs / nb_docs, 3)
         return avg_len
 
     def nb_docs_with_token(self, token):
@@ -61,11 +63,13 @@ class Indicators:
 
     def idf(self, token):
         '''
-        compute idf
+        compute idf (inverse document frequency)
         '''
         N = len(self.doc_ids())
         n = self.nb_docs_with_token(token)
-        idf = math.log((N - n + 0.5) / (n + 0.5) + 1)
+        # classic formula: math.log(N / n)
+        # use of modified formula to avoid division by 0
+        idf = (N - n + 0.5) / (n + 0.5) + 1
         return idf
 
     def bm25_token(self, token, id_doc, k = 1.2, b = 0.75):
