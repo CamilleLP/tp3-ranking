@@ -52,10 +52,10 @@ python3 main.py "recette pâte à crêpes" and --index index.json --documents do
 ### Launch tests of indicators:
 
 ```shell
-python3 -m unittest test_indicators.py
+python3 -m unittest TESTS/test_indicators.py
 ```
 
 ### Launch tests of ranking:
 ```shell
-python3 -m unittest test_ranking.py
+python3 -m unittest TESTS/test_ranking.py
 ```

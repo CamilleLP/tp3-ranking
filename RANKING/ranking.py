@@ -1,4 +1,5 @@
 import nltk
+nltk.download('punkt')
 from RANKING.indicators import Indicators
 import time
 import json
