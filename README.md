@@ -16,21 +16,22 @@ cd tp3-ranking
 pip3 install -r requirements.txt
 ```
 
-## Launch the ranking task
-The user must type the request <br> with quotes </br> and enter either <br>and</br> or <br>or</br>. 
--<br>and</br> will return documents which contain all the words of the request
--<br>or</br> will return documents which contain at least one of the word of the request
 
-### Example of request with <br>and</br> argument:
-The user has typed "recette pâte à crêpes" and want a filter of type <br>and</br>:
+## Launch the ranking task
+The user must type the request **with quotes** and enter either **and** or **or**. 
+- **and** will return documents which contain all the words of the request
+- **or** will return documents which contain at least one of the word of the request
+
+### Example of request with **and** argument:
+The user has typed "recette pâte à crêpes" and want a filter of type **and**:
 ```shell
 python3 main.py "recette pâte à crêpes" and
 ```
 
-### Example of request with <br>or</br> argument:
-Same request as before with a type <br>or</br>:
+### Example of request with **or** argument:
+Same request as before with a type **or**:
 ```shell
-python3 main.py "recette pâte à crêpes" and
+python3 main.py "recette pâte à crêpes" or
 ```
 It is possible to enter two optionnal arguments *--index* and *--documents* to change the name of the index and documents file. By default, index file is named *index.json* and documents file is named *documents.json*.
 
@@ -39,7 +40,7 @@ To get more information about arguments:
 python3 main.py --info
 ```
 ### Example with optionnal arguments:
-The user has typed "accueil cinéma", has chose a filter of type <br>and</br> and enter file names for *index* and *document*
+The user has typed "accueil cinéma", has chose a filter of type **and** and enter file names for *index* and *document*
 ```shell
 python3 main.py "recette pâte à crêpes" and --index index.json --documents documents.json
 ```
