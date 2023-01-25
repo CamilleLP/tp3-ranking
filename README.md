@@ -39,7 +39,9 @@ To get more information about arguments:
 ```shell
 python3 main.py -h
 ```
-### Example with optionnal arguments:
+
+### Example with optionnal arguments:
+
 The user has typed "accueil cinéma", has chose a filter of type **and** and enter file names for *index* and *document*
 ```shell
 python3 main.py "recette pâte à crêpes" and --index index.json --documents documents.json
@@ -47,10 +49,13 @@ python3 main.py "recette pâte à crêpes" and --index index.json --documents do
 
 ## Launch tests
 
+### Launch tests of indicators:
+
 ```shell
 python3 -m unittest test_indicators.py
 ```
 
+### Launch tests of ranking:
 ```shell
 python3 -m unittest test_ranking.py
 ```
